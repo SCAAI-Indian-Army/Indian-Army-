@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width ,initial-scale=1">
+	    <title>Add New Record</title>
+	    <style>
+		    body {  
+       font-family: Calibri, Helvetica, sans-serif;  
+       background-color: white;}  
+			button {   
+       background-color: #4CAF50;   
+       width: 25%;  
+        color: white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;}
+
+        button:hover {   
+        opacity: 0.7;}
+    </style>
+    </head>
+    <body>
+    	<center><h1 style = "color : red;"> ASTRA </h1></center>
+	    <hr>
+	    <center>
+	    	<h2> Add New Vehicle Record </h2>
+	    	<br>
+	    <form>  
+        <div class="container">   
+            <label><b>Vehicle Number : </b></label>   
+            <input type="text" placeholder="Enter Vehicle Number" name="Vehicle Number" required> 
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+            <label><b>Color : </b></label>   
+			<input type="text" placeholder="Enter color" name="Color" required>  
+            <hr><br>
+			<label><b>Type : </b></label>   
+            <select name = "Type">
+				<option value = "Sedan" selected = "selected">Sedan</option>
+				<option value = "Hatchback">Hatchback</option>
+				<option value = "Truck">Truck</option>
+			</select>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+			<label><b>Manufacturer : </b></label>
+			<select name = "Manufacturer">
+				<option value = "Hyundai" selected = "selected">Hyundai</option>
+				<option value = "Toyota">Toyota</option>
+				<option value = "Maruti">Maruti</option>
+			</select>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+			<label><b>Model : </b></label>
+			<select name = "Model">
+				<option value = "Etios" selected = "selected">Etios</option>
+				<option value = "Dzire">Dzire</option>
+				<option value = "City">City</option>
+			</select>
+			<hr><br>
+			<label><b>Chasis No. : </b></label>   
+            <input type="text" placeholder="Enter Chasis Number" name="Chasis Number" required> 
+			&nbsp;&nbsp;
+            <label><b>Engine No. :</b></label>   
+			<input type="text" placeholder="Enter Engine Number" name="Engine Number" required> 
+            &nbsp;&nbsp;
+			<label><b>RTO Region: </b></label>   
+			<select name = "RTC Region">
+				<option value = "Hyderabad" selected = "selected">Hyderabad</option>
+				<option value = "Noida">Noida</option>
+				<option value = "Kolkata">Kolkata</option>
+			</select>
+			<hr><br>
+            <center><label><b>Insurance Details : </b></label></center>   
+			<br>
+			<label><b>Insurance Number :</b></label>
+            <input type="text" placeholder="Enter Insurance Number" name="Insurance Number" required> 
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+            <label><b>Valid Till :</b></label>   
+			<input type="text" placeholder="mm" required> <input type="text" placeholder="yy" required> 
+            <hr><br>
+			<label><b>Location seen: </b></label>   
+			<select name = "Location">
+				<option value = "Bandipur" selected = "selected">Bandipur</option>
+				<option value = "Church Road">Church Road</option>
+				<option value = "Model Street">Model Street</option>
+			</select>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+			<label><b>Registration Location: </b></label>   
+			<select name = "Registration Location">
+				<option value = "Hyderabad" selected = "selected">Hyderabad</option>
+				<option value = "Noida">Noida</option>
+				<option value = "Kolkata">Kolkata</option>
+			</select>
+			<hr><br>
+			<center><label><b>Owner Details : </b></label></center>   
+			<br>
+			<label>Owner Name : </label>   
+			<input type="text" placeholder="Enter Owner Name" name="Owner Name" required>
+          	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+            <label><b>Phone Number :</b></label>   
+			<input type="text" placeholder="Enter Ph. No." name = "Phone Number" required> 
+            <hr><br>
+			<label><b>Event History : </b></label>   
+            <input type="text" placeholder="Event History" name="Event History" required> 
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+            <label><b>Activity Type: </b></label>   
+			<select name = "Activity Type">
+				<option value = "Not Suspicious" selected = "selected">Not Suspicious</option>
+				<option value = "Suspicious">Suspicious</option>
+				<option value = "Flagged">Flagged</option>
+			</select>
+            <hr><br><br>
+			<center><button>Back</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp <button type ="submit">Add Record</button></center>
+	    </form>	
+	</body>
+</html>
