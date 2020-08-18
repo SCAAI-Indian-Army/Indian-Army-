@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width ,initial-scale=1">
+	    <title>Add New Record</title>
+	    <style>
+		    body {  
+       font-family: Calibri, Helvetica, sans-serif;  
+       background-color: white;}  
+			button {   
+       background-color: #4CAF50;   
+       width: 25%;  
+        color: white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;}
+
+        button:hover {   
+        opacity: 0.7;}
+    </style>
+    </head>
+    <body>
+    	<center><h1 style = "color : red;"> ASTRA </h1></center>
+	    <hr>
+	    <center>
+	    	<h2> Add New Record </h2>
+	    	<br>
+	    <form>  
+        <div class="container">   
+            <center><label>Full Name : </label>   
+            <input type="text" placeholder="Enter Full name" name="FullName" required>  </center></br>
+            <center><label>Father's Name : </label>   
+            <input type="text" placeholder="Enter Fathers name" name="FatherName" required>  </center></br>
+            <center><label>Alias : </label>   
+            <input type="text" placeholder="Enter Alias" name="Alias" required>  </center></br>
+            <center><label>Age : </label>   
+            <input type="text" placeholder=" Enter Age" name="Age" required>  </center></br>
+            <label>Type : </label>
+                    <select name="Type">
+            <option value = "Civillian" selected="selected">Civillian</option>
+            <option value = "Extremist">Extremist</option>
+        </select><br>
+        <label>Village : </label>
+        <select name="Marital_Status">
+            <option value = "Not_Married" selected="selected">Not Married</option>
+            <option value = "Married">Married</option>
+        </select></br>
+        <hr>
+        <center><label>Address : </label>   
+            <input type="text" placeholder="Enter Full Address" name="Address" required>  </center>
+            &nbsp &nbsp &nbsp &nbsp
+        <label>Village : </label>
+        <select name="Village">
+            <option value = "Shammipur" selected="selected">Shammipur</option>
+            <option value = "Bandipore">Bandipore</option>
+        </select>
+        &nbsp &nbsp &nbsp &nbsp
+        <label>Tehsil : </label>
+        <select name="Tehsil">
+            <option value = "Jigna" selected="selected">Jigna</option>
+            <option value = "Aloosa">Aloosa</option>
+        </select>
+        <br>
+        <br>
+            <center><label>Latitude : </label>   
+            <input type="text" placeholder="Enter Latitude" name="Latitude">
+            <label>Longitude : </label>   
+            <input type="text" placeholder="Enter Longitude" name="Latitude"> </center></br>
+            <hr>
+            <select name="Activity_Type">
+            <option value = "Innocent" selected="selected">Innocent</option>
+            <option value = "Peaceful_protest">Peaceful Protest</option>
+        </select>
+        &nbsp &nbsp &nbsp &nbsp
+        <select name="Police_History">
+            <option value = "--NA--" selected="selected">--NA--</option>
+            <option value = "Arrested">Arrested</option>
+        </select>
+    </br>
+    <hr>
+    <h3> Family Information</h3>
+    <center><label> Mother's Name </label>
+    <input type="text" placeholder=" Enter Mother's Name" name="MotherName">  </center></br>
+    <center><label> Wife's Name </label>
+    <input type="text" placeholder=" Enter Wife's Name" name="WifeName">  </center>
+    &nbsp &nbsp &nbsp &nbsp
+    <center><label> Children </label>
+    <input type="text" placeholder=" Enter Children Count" name="ChildrenNo">  </center>
+    <hr>
+    <label> Remarks </label>
+    <input type="text" placeholder=" Enter Remarks" name="Remarks">  </center></br></br>
+
+            <button type="submit">Create Record</button>   
+        </div>   
+    </form>
+    <br>
+    <form action="/back">
+    <button style = "color : red;"> Back to Homescreen </button>
+    </form>
+	</center>
+    </body>
+	</html>
