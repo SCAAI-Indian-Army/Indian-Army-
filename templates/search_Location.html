@@ -1,29 +1,7 @@
-<!DOCTYPE html>
+{%extends "layout.html" %}
 
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width ,initial-scale=1">
-	    <title>Search by Location</title>
-	    <style>
-		    body {  
-       font-family: Calibri, Helvetica, sans-serif;  
-       background-color: white;}  
-			button {   
-       background-color: #4CAF50;   
-       width: 25%;  
-        color: white;   
-        padding: 15px;   
-        margin: 10px 0px;   
-        border: none;   
-        cursor: pointer;}
-
-        button:hover {   
-        opacity: 0.7;}
-    </style>
-    </head>
-    <body>
-    	<center><h1 style = "color : red;"> ASTRA </h1></center>
-	    <hr>
+{% block title %}Search by Location{% endblock %}
+{%block body%}
 	    <center>
 	    	<h2> Search By Location </h2>
 	    	<br>
@@ -52,8 +30,6 @@
         </div>   
     </form>
     <br>
-    <form action="/back">
-    <button style = "color : red;"> Back to Search Menu </button></form>
+    <a href="{{ url_for('search')}}"><button style = "color : red;"> Back to Search Menu </button></a>
 	</center>
-    </body>
-	</html>
+    {% endblock %}

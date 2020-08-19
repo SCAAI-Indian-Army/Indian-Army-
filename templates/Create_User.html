@@ -1,0 +1,27 @@
+{%extends "layout.html" %}
+
+{% block title %}Create New User{% endblock %}
+{%block body%}
+	<center><h3>CREATE NEW USER</h3></center>
+    <form>  
+        <div class="container">   
+            <center><label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>
+            </br>
+            <label>Password : </label>   
+            <input type="text" placeholder="Enter Password" name="password" required>
+           </br> 
+           <label>Clearance Level : </label>   
+            <select name = "Clearance Level">
+				<option value = "Admin level" selected = "selected">Admin Level</option>
+				<option value = "Level 1 user">Level 1 user</option>
+				<option value = "Access User">Access User</option>
+			</select> 
+		    </br></br>
+            <button type="submit">Add New User</button>
+            </center>   
+        </div>   
+    </form>
+    <a href="{{ url_for('back')}}">
+    <button>Back to HomeScreen</button></a>     
+{% endblock %}

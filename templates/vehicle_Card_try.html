@@ -67,7 +67,10 @@ button {
 		<br> <br>
 		<hr><b>Activity Type :</b> GENERAL</center>
 		<br><br>
-		<center><button>BACK</button> &nbsp;&nbsp <button>GET OWNER DETAILS</button></center>
+		<center><a href="{{ url_for('back')}}"><button>Back to HomeScreen</button></a>
+		 &nbsp;&nbsp
+		 	   <a href="{{ url_for('view')}}"><button>Get Owner Details</button></a>
+		</center>
 		</div>		
 	</body>
 </html>

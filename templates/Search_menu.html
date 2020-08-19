@@ -1,42 +1,21 @@
-<!DOCTYPE html>
+{%extends "layout.html" %}
 
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width ,initial-scale=1">
-	    <title>Search Person Menu</title>
-	    <style>
-		    body {  
-       font-family: Calibri, Helvetica, sans-serif;  
-       background-color: white;}  
-			button {   
-       background-color: #4CAF50;   
-       width: 25%;  
-        color: white;   
-        padding: 15px;   
-        margin: 10px 0px;   
-        border: none;   
-        cursor: pointer;}
-
-        button:hover {   
-        opacity: 0.7;}
-    </style>
-    </head>
-    <body>
-    	<center><h1 style = "color : red;"> ASTRA </h1></center>
-	    <hr>
+{% block title %}Search Menu{% endblock %}
+{%block body%}
 	    <center>
 	    	<h2> Search Records </h2>
 	    	<br>
 	    	<h3> Choose Search Criteria </h3>
 	    <center>
 	    	<br> <br> <br><br>
-	    	<button>Search by Name</button> &nbsp &nbsp &nbsp &nbsp &nbsp <button>Search by Location</button>
+	    	<a href="{{ url_for('search_name')}}"><button>Search by Name</button></a>
+	    	 &nbsp &nbsp &nbsp &nbsp &nbsp
+	    	  <a href="{{ url_for('search_location')}}"><button>Search by Location</button></a>
 	    	<br><br><br>
 	    	&nbsp &nbsp &nbsp &nbsp &nbsp
-	    	<form action="/back">
+	    	<a href="{{ url_for('back')}}">
 	    		<button>Back to Homescreen</button>
-	    	</form>
+	    	</a>
 	    </center>
 	    </center>
-	</body>
-	</html>
+{% endblock %}

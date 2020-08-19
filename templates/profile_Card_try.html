@@ -67,7 +67,13 @@ button {
 		<br> <br>
 		<hr><b>Remarks :</b> NOT A THREAT</center>
 		<br><br>
-		<center><button>BACK</button> &nbsp;&nbsp <button>GET VEHICLE DETAILS</button> &nbsp;&nbsp <button>PLOT LOCATION</button></center>
+		<center>
+			<a href="{{ url_for('back')}}"><button>Back to Homescreen</button></a>
+			 &nbsp;&nbsp
+			<a href="{{ url_for('view_vehicle')}}"><button>GET VEHICLE DETAILS</button></a>
+			   &nbsp;&nbsp
+			<button>PLOT LOCATION</button>
+			</center>
 		</div>		
 	</body>
 </html>
