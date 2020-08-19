@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width ,initial-scale=1">
+	    <title>Search by Location</title>
+	    <style>
+		    body {  
+       font-family: Calibri, Helvetica, sans-serif;  
+       background-color: white;}  
+			button {   
+       background-color: #4CAF50;   
+       width: 25%;  
+        color: white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;}
+
+        button:hover {   
+        opacity: 0.7;}
+    </style>
+    </head>
+    <body>
+    	<center><h1 style = "color : red;"> ASTRA </h1></center>
+	    <hr>
+	    <center>
+	    	<h2> Search By Location </h2>
+	    	<br>
+	    <form>  
+        <div class="container">   
+            <center><label>Full Name : </label>   
+            <input type="text" placeholder="Enter Full name" name="Fullname" required>  </center></br>
+        <label>Village : </label>
+        <select name="Village">
+            <option value = "Shammipur" selected="selected">Shammipur</option>
+            <option value = "Bandipore">Bandipore</option>
+        </select>
+        &nbsp &nbsp &nbsp &nbsp
+        <label>Tehsil : </label>
+        <select name="Tehsil">
+            <option value = "Jigna" selected="selected">Jigna</option>
+            <option value = "Aloosa">Aloosa</option>
+        </select>
+        <br>
+        <br>
+            <center><label>Latitude : </label>   
+            <input type="text" placeholder="Enter Latitude" name="Latitude">
+            <label>Longitude : </label>   
+            <input type="text" placeholder="Enter Longitude" name="Latitude"> </center></br></br> 
+            <button type="submit">Find</button>   
+        </div>   
+    </form>
+    <br>
+    <form action="/back">
+    <button style = "color : red;"> Back to Search Menu </button></form>
+	</center>
+    </body>
+	</html>
